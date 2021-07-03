@@ -9,8 +9,7 @@ PASSWORD = "abcd1234()"
 data = pandas.read_csv("birthdays.csv")
 
 birthdays_dict = {
-
-     #list comprehension
+     #dict comprehension
      (data_row['month'],data_row['day']) : data_row for (index,data_row) in data.iterrows()
 }
 
